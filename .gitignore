@@ -1,5 +1,8 @@
 #Files 
 battles.csv
+data
+eda.ipynb
+
 
 # Byte-compiled / optimized / DLL files
 __pycache__/
