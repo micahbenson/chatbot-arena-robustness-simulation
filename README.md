@@ -1,3 +1,5 @@
 #Computer Vision Experiment
 
-Evaluating how adversarial votes or distribution bias could impact the Chatbot Arena Benchmark
+Chatbot Arena (https://lmarena.ai) is a popular evaluation platform for large language models. The platform asks users to prompt models and then displays the anonymous responses of two models and asks which is better. Options are model_a is better, model_b is better, tie, or tie (both are bad). These pairwise battles are then used to develop a ranking based on the Bradley-Terry Model (https://en.wikipedia.org/wiki/Bradley–Terry_model). 
+
+This project explores the effects that systematic biases might have on the leaderboard rankings. Specifically, what if the users of Chatbot Arena (who skew towards tech workers excited about new AI trends) prefer OpenAI's models to other models more than the global population of LLM users? This could happen if these tech workers regularly use OpenAI's models and are more familiar with their outputs, causing them to prefer OpenAI generations even though the models in a battle are anonymous. For this toy example, I assume the current data is biased towards preferring GPT models, and simulate what the rankings would look like if we removed this bias.  
